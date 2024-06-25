@@ -1,0 +1,26 @@
+@keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .marquee-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+  }
+  
+  .marquee {
+    display: flex;
+    width: 200%; /* double the width for seamless looping */
+    animation: marquee 75s linear infinite;
+  }
+  
+  .marquee-text {
+    flex: 1 0 auto;
+  }
+  
